@@ -13,6 +13,8 @@ const HotelCard = ({ room, index }) => {
   const price = room.pricePerNight || 0;
   const roomId = room.id || room._id || '';
 
+  console.log(roomId)
+
   return (
     <Link
       to={`/rooms/${roomId}`}
